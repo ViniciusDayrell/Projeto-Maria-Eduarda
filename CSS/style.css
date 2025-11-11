@@ -26,6 +26,24 @@ main{
     width: 100%;
 }
 
+#título-principal{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    
+    /* background-image: url("../Imagens/img-catalogo.jpg"); */
+}
+
+#título-principal h1
+{
+    text-align: center;
+}
+
+#título-principal img{ 
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
 #nav-bar{
     background-color: #ffb5c0;
     padding: 15px 0;
@@ -40,8 +58,15 @@ main{
 
 #nav-bar a{
     text-decoration: none;
+    font-size:large ;
     font-weight: bold;
-    color:black;
-
-
+    color: white;
+    transition: all 0.3s ease;
 }
+
+#nav-bar a:hover{
+    color: #50a39e;
+    transform: scale(1.05);
+}
+
+
