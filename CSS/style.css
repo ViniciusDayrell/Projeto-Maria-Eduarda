@@ -105,3 +105,40 @@ footer{
 footer p{
     text-align: center;
 }
+
+/*Estilo para a lista de produtos*/
+.rows{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.produto{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    padding: 10px;
+    align-items: center;
+}
+
+.produto img{
+    border-radius: 50%;
+
+    transition: all 0.3s ease;
+}
+
+.produto img:hover{
+    box-shadow: 0 10px rgba(0, 0, 0, 0.4);
+    transform: scale(1.1);
+}
+
+.titulos-h2{
+    border-bottom: 1px solid #ffb5c0;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
