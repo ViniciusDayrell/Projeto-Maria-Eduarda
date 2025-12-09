@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Avaliação</title>
+    <link rel="stylesheet" href="./CSS/style.css">
 </head>
-<body>
-    <header>
-        <h1>Bem Vindo ao Cátalogo</h1>
-        <img src="./Imagens/img-catalogo.jpg" alt="imagem catalogo" width="100" height="100">
 
-        <nav>
-            <ul>
+<body>
+    <header id="cabecalho">
+        <div id="título-principal">  
+            <h1>Bem Vindo ao Cátalogo</h1>
+        </div> 
+
+        <nav id="nav-bar">
+            <ul class="menu">
                 <li><a href="index.html">Página Inicial</a></li>
                 <li><a href="catalogo.html">Cátalogo</a></li>
                 <li><a href="avaliacao.html">Avaliação</a></li>
@@ -20,21 +23,21 @@
     </header>
 
     <main>
-        <section>
-            <form action="">
+        <section class="container-form">
+            <form action="" id="form">
                 <div>
-                    <label for="nome">Nome:</label><br>
-                    <input type="text" name="nome" id="nome"><br><br>  
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome">
                 </div>
 
                 <div>
-                    <label for="email">Email:</label><br>
-                    <input type="email" name="email" id="email"><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
                 </div>
                 
                 <div>
-                    <label for="mensagem">Mensagem:</label><br>
-                    <textarea name="mensagem" id="mensagem" rows="5"></textarea><br><br>
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea name="mensagem" id="mensagem" rows="5"></textarea>
                 </div>
 
                 <div>

@@ -142,3 +142,33 @@ footer p{
     padding-bottom: 5px;
     margin-bottom: 10px;
 }
+
+/*Estilos para o formulario*/
+
+.container-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+#form div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+#form input,
+#form textarea{
+    outline: unset;
+    padding: 15px;
+    min-width: 300px;
+
+    border: 1px solid #ff4081;
+    border-radius: 15px;
+}
+
+#form input:focus,
+#form textarea:focus{
+    background-color: wheat;
+}
