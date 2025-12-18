@@ -35,18 +35,18 @@ main{
     display: flex;
     flex-direction: column;
     margin: 20px;
-    
-    /* background-image: url("../Imagens/img-catalogo.jpg"); */
+   
 }
 
-#título-principal h1
-{
+#título-principal h1{
     text-align: center;
 }
 
-#título-principal img{ 
-    margin: 0 auto;
-    margin-top: 10px;
+#cabecalho{
+    background: #f0f0f0 url("../Imagens/img-header.jpg") no-repeat center center / cover;
+    padding: 25px 0 0 0;
+    text-align: center;
+    color: black;
 }
 
 #nav-bar{
@@ -171,4 +171,22 @@ footer p{
 #form input:focus,
 #form textarea:focus{
     background-color: wheat;
+}
+
+.botao{
+    background: linear-gradient(45deg, #ff4081, #ff80ab);
+    border: none;
+    padding: 12px 30px;
+    cursor: pointer;
+
+    font-weight: bold;
+    color: white;
+    text-align: center;
+
+    transition: all 0.3s ease;
+}
+
+.botao:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 15px rgba(0, 0, 0, 0.2);
 }
