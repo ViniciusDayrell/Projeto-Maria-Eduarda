@@ -9,6 +9,11 @@ const emailInput = document.getElementById("email")
 const mensagemInput = document.getElementById("mensagem")
 const listacomentario= document.getElementById("listacomentario")
 
+function validarEmail(email){
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+    return regex.test(email)
+}
+
 form.addEventListener("submit", (e) =>{
     e.preventDefault()
 
@@ -19,6 +24,24 @@ form.addEventListener("submit", (e) =>{
     if(!nome || !email || !comentario){
         alert("Preencha todos os campos.")
         nomeInput.focus()
+        return
+    }
+
+    if(nome.length < 3){
+        alert("O nome deve ter pelo menos 3 caracteres")
+        nomeInput.focus()
+        return
+    }
+
+    if(!validarEmail(email)){
+        alert("Insira um email válido")
+        emailInput.focus()
+        return
+    }
+
+    if(comentario.length < 10){
+        alert("Comentario deve ter pelo menos 10 caracteres")
+        mensagemInput.focus()
         return
     }
     
